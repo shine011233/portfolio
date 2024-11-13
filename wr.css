@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+  box-sizing: border-box;
+
+}
+.a{
+    display: flex;
+}
+h2{
+    padding: 2%;
+    font-size: 24px;
+
+}
+.ic{
+    display:flex;
+}
+p{
+    padding: 1%;
+    padding-left: 4%;
+    font-size: 18px;
+}
+.lis li{
+    padding: 1%;
+    margin-left: 8%;
+    font-size: 16px;
+    list-style-type: circle;
+}
+.left{
+    background-color: #003147;
+    color: white;
+    padding: 5%;
+    padding-right: 1%;
+
+}
+.ig{
+    margin-top: 2%;
+}
+.whole{
+    margin-left: 2%;
+    margin-top: 4%;
+    background-color: rgba(0, 0, 0, 0.775);
+    margin-bottom: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500px;
+}
+.right{
+    padding: 3%;
+    background-color: whitesmoke;
+    font-weight: 500;
+    margin-right: -2px;
+
+
+
+}
+.pic{
+    height: 250px;
+    width: 230px;
+    margin-top: 10px;
+    padding-bottom: 10%;
+    padding-right: 15px;
+}
+.tag{
+    color: white;
+}
+.name{
+    font-size: 60px;
+    padding-bottom: 10px;
+    font-weight: 700px;
+    letter-spacing: 7px;
+    text-shadow: 1px 1px whitesmoke;
+    text-align: center;
+
+}
+.des{
+    font-size: 25px;
+    padding-bottom: 5%;
+    text-align: center;
+    color: #003147;
+    margin-top: -2px;
+    letter-spacing: 5px;
+}
+.he{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+button{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 10px;
+    width: 26px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(227, 216, 216);
+    margin-right: 0.5%;
+}
+.yes{
+    background-color: skyblue;
+}
+
+.boxl{
+    margin-left: 10%;
+}
+.t1,tr,td{
+    border-collapse: collapse;
+    border: none;
+    padding: 15px;
+    font-size: 16px
+}
+table{
+    margin-left: 2%;
+}

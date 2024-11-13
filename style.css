@@ -1,0 +1,800 @@
+
+body {
+    background-image: url("/imgs/bg1.jpg");
+    margin: 0%;
+    font-family: calibri;
+}
+
+* {
+    text-decoration: none;
+}
+
+/* NAV BAR */
+.nav {
+    position: fixed;
+    background: black;
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    color: lightseagreen;
+    font-size: 35px;
+    font-weight: 600;
+    padding-left: 5%;
+}
+
+.menu {
+    padding-right: -100px;
+}
+
+.title:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    filter: drop-shadow()
+}
+
+.navlist li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+@media only screen and (min-width: 1150px) {
+    .navlist li {
+        padding-right: 100px;
+    }
+}
+
+.navlist li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+.navlist li a:hover {
+    color: rgb(14, 14, 14);
+    background-color: lightseagreen;
+}
+
+.navdiv .select {
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .listtab {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 100px) {
+    .photo {
+        width: 100%;
+        padding: 50% 50% 0% 50%;
+    }
+}
+
+/* NAVBAR tab */
+@media only screen and (max-width: 900px) {
+    .navdiv .select {
+        display: block;
+        padding: 0px 100px;
+        color: white;
+        font-size: 25px;
+    }
+
+    .navdiv .select a {
+        color: white;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .listtab li {
+        list-style: none;
+        text-align: center;
+        padding-right: 100px;
+        line-height: 50px;
+    }
+
+    .listtab li a {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 10px;
+        border-radius: 5%;
+        padding: 20px;
+    }
+
+    .listtab li a:hover {
+        color: rgb(14, 14, 14);
+        background-color: lightseagreen;
+    }
+}
+
+/* NAVBAR PHONE */
+@media only screen and (max-width: 500px) {
+    .navdiv .select {
+        padding: 0px 60px;
+    }
+}
+
+/* Page left */
+.fixedsm {
+    margin-top: 200px;
+    margin-left: 0px;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    display: inline;
+    padding: 8px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 0px 20px 1px rgb(14, 14, 14);
+}
+
+.iconbox i {
+    color: lightseagreen;
+    font-size: 25px;
+    padding: 20px 5px;
+}
+
+.iconbox i:hover {
+    color: white;
+}
+
+/* PAGE 1 */
+.section1 {
+    padding-top: 15%;
+    background-image: url("/imgs/bg1.jpg");
+    background-size: cover;
+}
+
+.name {
+    padding-top: 20%;
+    background-image: url("/imgs/bg1.jpg");
+}
+
+.hai {
+    font-size: 45px;
+    color: white;
+    letter-spacing: 15px;
+    line-height: 10px;
+}
+
+@keyframes nameclr {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: lightseagreen;
+
+    }
+
+}
+
+.myname {
+    color: lightseagreen;
+    letter-spacing: 5px;
+    font-size: 90px;
+    line-height: 30px;
+    animation: nameclr 1s 1s alternate infinite;
+}
+
+.namecontent {
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.cv {
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgb(14, 14,
+            14);
+    border-color: lightseagreen;
+}
+
+.cv:hover {
+    scale: 1.05;
+    color: black;
+    background-color: white;
+    border-color: white;
+    box-shadow: 0px 0px 50px 1px lightgreen;
+}
+
+/* page1 PHONE */
+@media only screen and (max-width: 900px) {
+    .section1 {
+        padding-top: 35%;
+        background-size: cover;
+    }
+
+    .hai {
+        font-size: 15px;
+        color: white;
+    }
+
+    .myname {
+        font-size: 50px;
+        letter-spacing: 4px;
+    }
+
+    .namecontent {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 10px 80px;
+    }
+
+    .cv {
+        color: white;
+        font-size: 15px;
+        height: 30px;
+        border-radius: 4px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section1 {
+        padding-top: 35%;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .name {
+        padding-top: 60%;
+        margin-top: 50px;
+    }
+}
+
+/* PAGE 2 */
+.section2 {
+    background-color: black;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.photo {
+    width: 30%;
+    padding: 5% 5% 0% 5%;
+}
+
+.about {
+    color: white;
+    width: 70%;
+    padding: 5% 5% 0% 5%;
+}
+
+.abouth {
+    font-size: 45px;
+    letter-spacing: 15px;
+    line-height: 10px;
+}
+
+.content {
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5%;
+}
+
+.photo img {
+    width: 126%;
+}
+
+/* page2 tab */
+@media only screen and (max-width: 900px) {
+    .aboutme {
+        display: grid;
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+
+    .photo {
+        grid-column: 1;
+        padding: 40px 0px 0px 60px;
+    }
+
+    .photo img {
+        width: 160px;
+        height: 200px;
+    }
+
+    .about {
+        grid-column: 2;
+        color: white;
+        padding: 5% 5% 0% 5%;
+        width: 90%;
+    }
+
+    .abouth {
+        font-size: 20px;
+        letter-spacing: 5px;
+        line-height: 10px;
+    }
+
+    .content {
+        text-align: justify;
+        color: white;
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+
+/* page2 PHONE */
+@media only screen and (max-width: 300px) {
+    .aboutme {
+        display: grid;
+        justify-content: space-around;
+        grid-gap: 20px;
+    }
+
+    .photo {
+        grid-column: 1;
+        padding: 40px 0px 0px 60px;
+    }
+
+    .photo img {
+        width: 120px;
+        height: 150px;
+    }
+
+    .about {
+        grid-column: 2;
+        color: white;
+        padding: 5% 5% 0% 5%;
+        width: 90%;
+    }
+
+    .abouth {
+        font-size: 20px;
+        letter-spacing: 5px;
+        line-height: 10px;
+    }
+
+    .content {
+        text-align: justify;
+        color: white;
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+
+/* PAGE 3 */
+.section3 {
+    background: rgb(14, 14, 14);
+    width: 100%;
+}
+
+.edu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+}
+
+.edutit {
+    padding-top: 2%;
+    line-height: 10px;
+    color: white;
+    padding-bottom: 2%;
+    font-size: 45px;
+    letter-spacing: 15px;
+}
+
+.study {
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-left: 5px solid lightseagreen;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 4%;
+    background-color: black;
+}
+
+.study:hover {
+    color: black;
+    border-left: 5px solid black;
+    background-color: lightseagreen;
+    box-shadow: 0px 0px 25px 1px rgb(61, 61, 61);
+}
+
+/* page3 PHONE */
+@media only screen and (max-width: 900px) {
+    .edu {
+        display: block;
+        justify-content: space-between;
+        padding: 15px 20%;
+    }
+
+    .edutit {
+        line-height: 0;
+        padding-bottom: 0%;
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .study h2 {
+        font-size: 10px;
+    }
+
+    .study h5 {
+        font-size: 5px;
+    }
+
+    .study p {
+        font-size: 7px;
+    }
+
+    .study {
+        color: white;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        margin-right: 4%;
+        background-color: black;
+    }
+}
+
+/* PAGE 4 */
+.section4 {
+    background-color: black;
+    color: white;
+    padding-top: 1%;
+}
+
+.service {
+    padding-top: 2%;
+    line-height: 10px;
+    color: white;
+    padding-bottom: 2%;
+    font-size: 45px;
+    letter-spacing: 15px;
+}
+
+.ser {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+}
+
+.design {
+    color: black;
+    width: 100%;
+    height: 100%;
+    border-left: 5px solid rgb(49,
+            49, 49);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 4%;
+    background-color: lightseagreen;
+}
+
+.design h2 {
+    text-align: center;
+}
+
+.design i {
+    font-size: 100px;
+}
+
+.design:hover {
+    color: white;
+    border-left: 5px solid lightseagreen;
+    background-color: rgb(14, 14,
+            14);
+}
+
+/* PAGE 4 phone */
+@media only screen and (max-width: 900px) {
+    .service {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .design {
+        color: black;
+        width: 80%;
+        height: 80%;
+        border-left: 5px solid rgb(49, 49, 49);
+        border-radius: 5px;
+        background-color:
+            lightseagreen;
+    }
+
+    .design h2 {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .design i {
+        font-size: 50px;
+    }
+}
+
+/* PAGE 5 */
+.section5 {
+    color: white;
+}
+
+.skill {
+    line-height: 10px;
+    padding-top: 20px;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 15px;
+}
+
+.sktype {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0px 5%;
+}
+
+.myskill {
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+#html {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#css {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#js {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#jq {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+#bs {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#ps {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#ms {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#cad {
+    grid-row: 2;
+    grid-column: 4;
+}
+
+#sw {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.myskill:hover {
+    background-color: lightseagreen;
+    color: black;
+}
+
+.myskill img {
+    height: 100px;
+    width: 100px;
+}
+
+.myskill img:hover {
+    scale: 1.1;
+}
+
+/* PAGE 5 phone incomplete */
+@media only screen and (max-width: 900px) {
+    .skill {
+        font-size: 20px;
+        letter-spacing: 10px;
+        padding-bottom: 15px;
+    }
+
+    .sktype {
+        display: grid;
+    }
+
+    .sktype .myskill h2 {
+        font-size: 10px;
+    }
+
+    #html {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #css {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #js {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    #jq {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #bs {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #ps {
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    #ms {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    #cad {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    #sw {
+        grid-row: 3;
+        grid-column: 3;
+    }
+
+    .myskill img {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+/* PAGE 6 */
+.section6 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.msg {
+    display: grid;
+    grid-gap: 100px;
+    padding: 0px 60px;
+}
+
+.input {
+    grid-column: 1;
+}
+
+.contactus {
+    padding-top: 15px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 15px;
+}
+
+.contact:hover {
+    color: white;
+}
+
+.contactdetails {
+    grid-column: 2;
+    text-decoration: none;
+}
+
+/* .map{
+width:600px;
+height: 200px;
+} */
+.inputbox {
+    padding: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+form .cv {
+    width: 200px;
+}
+
+/* PAGE 6 phone */
+@media only screen and (max-width: 900px) {
+    .msg {
+        display: grid;
+        grid-gap: 10px;
+        justify-content: space-around;
+    }
+
+    .input {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    .contactdetails {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .contact {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .contactdetails h2 {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 0px;
+    }
+
+    .inputbox {
+        padding: 10px;
+        font-size: 7px;
+        width: 100%;
+        border-radius: 2px;
+        border: none;
+    }
+}
+
+/* footer */
+footer h6 {
+    text-align: center;
+    color: white;
+}
+
+center a i {
+    color: rgb(50, 50, 50);
+    padding: 40px 0px;
+    font-size: 30px;
+}
+
+center a i:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    center a i {
+        padding: 0px 0px 20px 0px;
+    }
+}
